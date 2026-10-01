@@ -1,0 +1,15 @@
+/* O card (div da carta) */
+.card {
+  width: 210px;                /* largura do card */
+  border: 1px solid gray;      /* borda de 1px cinzenta */
+  border-radius: 5px;          /* cantos levemente arredondados */
+  text-align: center;          /* centraliza o texto e a imagem */
+}
+
+/* A imagem */
+.card img {
+  width: 200px;                             /* largura da imagem */
+  border: 5px solid rgb(236, 183, 191);     /* borda rosa de 5px */
+  border-radius: 50%;                       /* 50% transforma em círculo */
+  box-sizing: border-box;                   /* borda entra nos 200px */
+}

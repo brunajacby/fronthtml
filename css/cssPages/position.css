@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+#two {
+  position: static;
+  top: 20px;
+  left: 20px;
+  background: blue;
+}
+/*
+static - fica padrão no html e não aceita propriedades de deslocamento.
+relative - o espaço dele fica padrão no html(espaço reservado), mas o elemento flutua aceitando propriedades de deslocamento.
+absolute - elemento é removido do fluxo da pagina nao ocupa espaço na estrutura e flutua sobre os outros elementos.
+fixed - tem mesma propriedades do absolute, fica preso a janela do navegador.
+sticky - comporta-se como o relativo, porem ao scrollar a pagina ele fixa ao chegar no topo.
+ */

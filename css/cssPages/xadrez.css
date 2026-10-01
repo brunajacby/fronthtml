@@ -1,0 +1,25 @@
+/* Cada quadrado do tabuleiro */
+.square {
+  width: 100px;            /* largura do quadrado */
+  height: 100px;           /* altura do quadrado */
+  box-sizing: border-box;  /* a borda entra nos 100px (não soma por fora) */
+  border: 1px solid black; /* borda de 1px, contínua, preta */
+}
+
+/* O tabuleiro (container dos 25 quadrados) */
+#board {
+  display: flex;           /* coloca os quadrados lado a lado */
+  margin: 0 auto;          /* centraliza o tabuleiro na página */
+  width: 500px;            /* 5 quadrados x 100px = 5 por linha */
+  flex-wrap: wrap;         /* quebra para a linha de baixo quando enche */
+}
+
+/* Quadrados nas posições ímpares (1º, 3º, 5º...) */
+.square:nth-of-type(odd) {
+  background-color: red;   /* fundo vermelho */
+}
+
+/* Quadrados nas posições pares (2º, 4º, 6º...) */
+.square:nth-of-type(even) {
+  background-color: black; /* fundo preto */
+}
