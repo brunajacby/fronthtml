@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Bootstrap</title>
+
+    <!-- CSS do Bootstrap -->
+    <link href="../css/cssPages/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- 1. Secção transformada num container do Bootstrap -->
+    <section class="container mt-4 w-50 w-sm50 w-md-25">
+
+        <!-- 2. h1 com texto branco, fundo escuro e texto centrado -->
+        <h1 class="text-light bg-dark text-center">Bad News</h1>
+
+        <!-- 3. e 4. div como alerta warning, com role="alert" -->
+        <div class="alert alert-warning" role="alert">
+            You are going to die one day! It sucks, but it's normal :(
+        </div>
+
+        <!-- 5. Botão verde -->
+        <button type="button" class="btn btn-success">Come To Terms With</button>
+
+        <!-- 6. Botão vermelho -->
+        <button type="button" class="btn btn-danger">Continue To Deny</button>
+
+    </section>
+
+    <!-- grid -->
+    <section>
+      <div class="container text-center mt-4">
+        <div class="row">
+          <div class="col-sm-6 col-md-4 bg-success">Column</div>
+          <div class="col-sm-6 col-md-4 bg-secondary">Column</div>
+          <div class="col-sm-6 col-md-4 bg-success">Column</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exercício -->
+    <section>
+      <div class="container mt-5">
+
+        <!-- Linha 1: 4 + 8 = 12 -->
+        <div class="row">
+          <div class="col-4 bg-danger">One Third</div>
+          <div class="col-8 bg-info">Two Thirds</div>
+        </div>
+
+        <!-- Linha 2: 3 + 6 + 3 = 12 -->
+        <div class="row">
+          <div class="col-3 bg-warning">One Quarter</div>
+          <div class="col-6 bg-secondary">One Half</div>
+          <div class="col-3 bg-warning">One Quarter</div>
+        </div>
+
+      </div>
+    </section>
+
+</body>
+</html>

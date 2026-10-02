@@ -6,14 +6,62 @@
     <title>Homepage Projecto web</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
+    <!-- CSS do Bootstrap -->
+    <link href="css/cssPages/bootstrap.css" rel="stylesheet" />
+
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <!-- CSS da minha app -->
     <link rel="stylesheet" href="css/cssPages/style.css">
-    
 </head>
 
 <body>
-  <h5> Halloween 🧙 </h5>
+
+    <!-- Navbar do Bootstrap (exemplo da professora) -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
     <!-- Menu de navegação teste -->
+     <i class="bi bi-airplane"></i>
+     <hr>
+
+     <div class="container">
+        <h1>Menu de navegação</h1>
     <nav>
         <a id="voltaraotopo" href="Pages/Moviesex02.html#reviews">Movies</a>
         <a href="Pages/Pangolinex01.html">Pangolin</a>
@@ -79,7 +127,7 @@
       <h4>Módulos de Software Developer</h4>
     </section>
  
-    <table border="1px">
+    <table class="table table-bordered table-striped table-hover w-auto">
         <thead>
           <tr>
             <th>Nome</th>
@@ -89,32 +137,35 @@
           </tr>
         </thead>
 
-        <tr>
-          <td>Programação Web</td>
-          <td>50h</td>
-          <td>Sara Monteiro</td>
-          <td>AC / Projecto</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Programação Web</td>
+            <td>50h</td>
+            <td>Sara Monteiro</td>
+            <td>AC / Projecto</td>
+          </tr>
 
-        <tr>
-          <td>Algoritmia em C#</td>
-          <td>50h</td>
-          <td>Marco Pereira</td>
-          <td>Exame / Projeto / exercicios</td>
-        </tr>
+          <tr>
+            <td>Algoritmia em C#</td>
+            <td>50h</td>
+            <td>Marco Pereira</td>
+            <td>Exame / Projeto / exercicios</td>
+          </tr>
 
-        <tr>
-          <td>Bases de Dados</td>
-          <td>50h</td>
-          <td>Ana Martelo</td>
-          <td>Fichas de Trabalho e Apresentação</td>
-          <tfoot>
+          <tr>
+            <td>Bases de Dados</td>
+            <td>50h</td>
+            <td>Ana Martelo</td>
+            <td>Fichas de Trabalho e Apresentação</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
           <tr>
             <th>Total Disciplinas</th>
-            <td colspan="3"><center>3</center></td>
+            <td colspan="3" class="text-center">3</td>
           </tr>
         </tfoot>
-        </tr>
     </table>
  
     <section id="lists">
@@ -165,5 +216,14 @@
     <h5 id="calendar">Calendário Escolar</h5>
     <p>Férias de Natal: 16 de dezembro</p>
     <a href="#voltaraotopo">Voltar ao topo</a>
+
+  </div> <!-- fim do container -->
+  
+    <!-- JS do Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
